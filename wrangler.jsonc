@@ -9,6 +9,9 @@
 	"compatibility_date": "2025-05-15",
 	"observability": {
 		"enabled": true
+	},
+	"vars": {
+		"BASEHUB_REF": "main"
 	}
 	/**
 	 * Smart Placement
