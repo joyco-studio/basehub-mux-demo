@@ -16,7 +16,7 @@ BaseHub provides useful information about a source `.mp4` video, like `width`, `
 
 Luckily, BaseHub is an extensible platform that enables you to plug in any webhook triggered by an action taken over a block—that’s what’s happening here. We get the best of both worlds, dynamic video content managed through a CMS + HLS video streaming.
 
-## Setup
+## Local Setup
 
 You'll need an existing BaseHub repo (see our [example repo here](https://basehub.com/joyco/basehub-mux-demo)), and a MUX account to upload videos to.
 
@@ -26,4 +26,10 @@ Add the following environment variables to your `.dev.vars` file:
 MUX_TOKEN_ID=""
 MUX_TOKEN_SECRET=""
 BASEHUB_TOKEN="" # IMPORTANT: this needs to be an Admin Token, so your sever can use the BaseHub Mutation API
+BASEHUB_REF="main"
 ```
+
+## Cloudflare setup
+
+- Add the `.dev.vars` contents through the CF dashboard for your Workers project.
+- At build time, the [basehub sdk](https://github.com/basehub-ai/basehub) needs to generate types, so we need both `BASEHUB_TOKEN` and `BASEHUB_REF` env vars, you need to explicitly add those through the CF dashboard for the build process.
