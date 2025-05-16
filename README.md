@@ -1,4 +1,4 @@
-# `Basehub<>MUX` Demo
+# `Basehub <> MUX` Integration Demo
 
 This is a [Cloudflare Workers](https://developers.cloudflare.com/workers/) API demo using [Hono](https://hono.dev/docs/getting-started/cloudflare-workers) for API routing. The flow looks something like this: `Basehub Webhook -> Our CF Worker API -> MUX`, then, in the opposite direction, we take the MUX asset information and store it on Basehub: `MUX Asset Info -> Our CF Worker API -> Basehub`. We achieve this by:
 
