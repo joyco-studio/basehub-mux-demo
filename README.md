@@ -12,7 +12,7 @@ On your frontend, you can grab that `Playback ID` to request the video stream fr
 
 ## Why did we choose this setup?
 
-Basehub provides useful information about a source `.mp4` video, like `width`, `height`, and `aspect-ratio`. But it doesn’t serve `HLS` video format, which is known for reliable, fast playback and adaptive quality based on network conditions. Luckily, Basehub is an extensible platform that enables you to plug in any webhook triggered by an action taken over a block—that’s what’s happening here. We get the best of both worlds.
+Basehub provides useful information about a source `.mp4` video, like `width`, `height`, and `aspect-ratio`. But it doesn’t serve `HLS` video format, which is known for reliable, fast playback and adaptive quality based on network conditions. Luckily, Basehub is an extensible platform that enables you to plug in any webhook triggered by an action taken over a block—that’s what’s happening here. We get the best of both worlds, dynamic video content managed through a CMS + HLS video streaming.
 
 ## Setup
 
