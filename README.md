@@ -12,6 +12,9 @@ Exposing a `/mux` route that does the following in order:
 
 On your frontend, you can grab that `Playback ID` to request the video stream from MUX. Take a look at this [BaseHub public repo](https://basehub.com/joyco/basehub-mux-demo) to see the complete setup.
 
+This is how the workflow looks like targeting the [Mux Video component](https://basehub.com/joyco/basehub-mux-demo/explore/main/b4834cefce996f339dbd7)
+<img width="1082" alt="image" src="https://github.com/user-attachments/assets/89882530-0e4e-4218-8d84-3c7d684e9e4d" />
+
 ## Why did we choose this setup?
 
 BaseHub provides useful information about a source `.mp4` video, like `width`, `height`, and `aspect-ratio`. But it doesn’t serve `HLS` video format, which is known for reliable, fast playback and adaptive quality based on network conditions.
